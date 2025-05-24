@@ -7,6 +7,7 @@ for i in range(N):
 for i in range(N):
     T.append(list(input()))
 
+
 def rotate(S):
     S_rotated = [["." for i in range(N)] for i in range(N)]
     for i in range(N):
@@ -14,7 +15,7 @@ def rotate(S):
             S_rotated[j][N-i-1] = S[i][j]
     return S_rotated
 
+
 min_cnt = N*N
 
 print(min_cnt)
-
